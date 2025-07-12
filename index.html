@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scarpastore | Jual Beli Sneakers Exclusive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+      .cart-item {
+        transition: all 0.3s ease;
+      }
+      .cart-item:hover {
+        background-color: #f9fafb;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-shoe-prints text-2xl text-indigo-600"></i>
+            <h1 class="text-xl font-bold text-gray-900">Scarpastore</h1>
+          </div>
+          <div class="flex items-center space-x-4">
+            <a
+              href="#products"
+              class="hidden md:block text-gray-600 hover:text-indigo-600"
+              >Produk</a
+            >
+            <a
+              href="#about"
+              class="hidden md:block text-gray-600 hover:text-indigo-600"
+              >Tentang Kami</a
+            >
+            <button
+              id="cartButton"
+              class="relative p-2 text-gray-600 hover:text-indigo-600"
+            >
+              <i class="fas fa-shopping-cart text-xl"></i>
+              <span
+                id="cartCount"
+                class="absolute -top-1 -right-1 bg-indigo-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center"
+                >0</span
+              >
+            </button>
+            <button id="mobileMenuButton" class="md:hidden p-2 text-gray-600">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+          <a
+            href="#products"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50"
+            >Produk</a
+          >
+          <a
+            href="#about"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50"
+            >Tentang Kami</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+              Temukan Sneakers Eksklusif Anda
+            </h2>
+            <p class="text-xl mb-8">
+              Koleksi terbaik sneakers original dengan harga terbaik hanya di
+              Scarpastore.
+            </p>
+            <a
+              href="#products"
+              class="inline-block bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300"
+              >Lihat Produk</a
+            >
+          </div>
+          <div class="hidden md:block">
+            <img
+              src="GAMBAR/LOGO.jpg"
+              alt="Koleksi sneakers premium berbagai merek terkenal tersusun rapi dengan latar belakang modern"
+              class="rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">
+          Koleksi Sneakers Kami
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Temukan sneakers favorit Anda dari berbagai merek ternama dengan
+          kualitas terjamin.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Product 1 -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300"
+        >
+          <div class="h-64 overflow-hidden">
+            <img
+              src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b7f35375-d835-42a9-b70f-9d76f82a6757.png"
+              alt="Nike Air Jordan 1 Retro High OG dengan warna klasik Chicago Red, tampak depan dan sisi sepatu"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Nike Air Jordan 1
+                </h3>
+                <p class="text-indigo-600 font-medium">Rp 3.499.000</p>
+              </div>
+              <span
+                class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full"
+                >Stok: 5</span
+              >
+            </div>
+            <p class="mt-2 text-gray-600 text-sm">
+              Warna: Chicago Red/Black-White
+            </p>
+            <button
+              class="add-to-cart mt-4 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300"
+              data-id="1"
+              data-name="Nike Air Jordan 1"
+              data-price="3499000"
+              data-image="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b7f35375-d835-42a9-b70f-9d76f82a6757.png"
+            >
+              + Keranjang
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300"
+        >
+          <div class="h-64 overflow-hidden">
+            <img
+              src="GAMBAR/yeezy.jpg"
+              alt="Adidas Yeezy Boost 350 V2 Zebra dengan pola stripe putih-hitam khas, tampak samping dan atas sepatu"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Adidas Yeezy 350 V2
+                </h3>
+                <p class="text-indigo-600 font-medium">Rp 4.250.000</p>
+              </div>
+              <span
+                class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full"
+                >Stok: 3</span
+              >
+            </div>
+            <p class="mt-2 text-gray-600 text-sm">Warna: Zebra</p>
+            <button
+              class="add-to-cart mt-4 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300"
+              data-id="2"
+              data-name="Adidas Yeezy 350 V2"
+              data-price="4250000"
+              data-image="c:\RY 2\GAMBAR\yeezy.jpg"
+            >
+              + Keranjang
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300"
+        >
+          <div class="h-64 overflow-hidden">
+            <img
+              src="GAMBAR/converse.jpg"
+              alt="Converse Chuck Taylor All Star 70 High Top versi vintage warna putih dengan detail klasik"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Converse Chuck 70
+                </h3>
+                <p class="text-indigo-600 font-medium">Rp 1.299.000</p>
+              </div>
+              <span
+                class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full"
+                >Stok: 10</span
+              >
+            </div>
+            <p class="mt-2 text-gray-600 text-sm">Warna: Vintage White</p>
+            <button
+              class="add-to-cart mt-4 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300"
+              data-id="3"
+              data-name="Converse Chuck 70"
+              data-price="1299000"
+              data-image="GAMBAR/converse.jpg"
+            >
+              + Keranjang
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300"
+        >
+          <div class="h-64 overflow-hidden">
+            <img
+              src="GAMBAR/nb.jpg"
+              alt="New Balance 990v5 Made in USA dengan warna abu-abu klasik dan teknologi cushioning terbaru"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900">
+                  New Balance 990v5
+                </h3>
+                <p class="text-indigo-600 font-medium">Rp 2.999.000</p>
+              </div>
+              <span
+                class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full"
+                >Stok: 7</span
+              >
+            </div>
+            <p class="mt-2 text-gray-600 text-sm">Warna: Grey/White</p>
+            <button
+              class="add-to-cart mt-4 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300"
+              data-id="4"
+              data-name="New Balance 990v5"
+              data-price="2999000"
+              data-image="GAMBAR/nb.jpg"
+            >
+              + Keranjang
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300"
+        >
+          <div class="h-64 overflow-hidden">
+            <img
+              src="GAMBAR/vans.jpg"
+              alt="Vans Old Skool hitam dengan stripe putih klasik, tampak samping sepatu dengan sol waffle"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Vans Old Skool
+                </h3>
+                <p class="text-indigo-600 font-medium">Rp 799.000</p>
+              </div>
+              <span
+                class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full"
+                >Stok: 15</span
+              >
+            </div>
+            <p class="mt-2 text-gray-600 text-sm">Warna: Black/White</p>
+            <button
+              class="add-to-cart mt-4 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300"
+              data-id="5"
+              data-name="Vans Old Skool"
+              data-price="799000"
+              data-image="GAMBAR/vans.jpg"
+            >
+              + Keranjang
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div
+          class="bg-white rounded-lg shadow-md overflow-hidden product-card transition duration-300"
+        >
+          <div class="h-64 overflow-hidden">
+            <img
+              src="GAMBAR/af1.jpg"
+              alt="Air Force 1 Low '07 premium kulit putih bersih dengan detail logo Nike emas, tampak atas dan depan"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Nike Air Force 1
+                </h3>
+                <p class="text-indigo-600 font-medium">Rp 1.599.000</p>
+              </div>
+              <span
+                class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full"
+                >Stok: 8</span
+              >
+            </div>
+            <p class="mt-2 text-gray-600 text-sm">Warna: White/Gold</p>
+            <button
+              class="add-to-cart mt-4 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition duration-300"
+              data-id="6"
+              data-name="Nike Air Force 1"
+              data-price="1599000"
+              data-image="GAMBAR/af1.jpg"
+            >
+              + Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-100 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Tentang Scarpastore
+          </h2>
+          <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img
+              src="GAMBAR/toko store.webp"
+              alt="Toko fisik Scarpastore dengan rak-rak sneakers eksklusif yang tertata rapi dan pencahayaan modern"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+              Jual Beli Sneakers Premium
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Scarpastore adalah destinasi utama bagi para kolektor dan pecinta
+              sneakers di Indonesia. Kami menyediakan sneakers eksklusif dari
+              berbagai merek ternama dengan kualitas terjamin 100% original.
+            </p>
+            <p class="text-gray-600 mb-4">
+              Dengan pengalaman lebih dari 5 tahun di industri sneaker, kami
+              mengutamakan keaslian produk dan kepuasan pelanggan. Setiap pasang
+              sneakers yang kami jual melalui proses authentication ketat
+              sebelum dijual.
+            </p>
+            <div class="flex items-center space-x-4 mt-6">
+              <div class="flex items-center">
+                <i class="fas fa-check-circle text-indigo-600 mr-2"></i>
+                <span class="text-gray-700">Garansi Keaslian</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-shipping-fast text-indigo-600 mr-2"></i>
+                <span class="text-gray-700">Gratis Ongkir</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <i class="fas fa-shoe-prints text-2xl text-indigo-400"></i>
+              <h3 class="text-xl font-bold">Scarpastore</h3>
+            </div>
+            <p class="text-gray-400">
+              Temukan sneakers eksklusif favorit Anda dengan kualitas terbaik.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Navigasi</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#products"
+                  class="text-gray-400 hover:text-white transition"
+                  >Produk</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Syarat & Ketentuan</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Kontak</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <i class="fas fa-map-marker-alt text-indigo-400 mr-2"></i>
+                <span class="text-gray-400">Bandung, Indonesia</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-phone-alt text-indigo-400 mr-2"></i>
+                <span class="text-gray-400">+62 881-0236-48015</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope text-indigo-400 mr-2"></i>
+                <span class="text-gray-400">hello@scarpastore.com</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Follow Kami</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition"
+                ><i class="fab fa-instagram text-xl"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white transition"
+                ><i class="fab fa-facebook text-xl"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white transition"
+                ><i class="fab fa-twitter text-xl"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white transition"
+                ><i class="fab fa-whatsapp text-xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>© 2023 Scarpastore. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+      <div
+        class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+      >
+        <div class="fixed inset-0 transition-opacity">
+          <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+        </div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
+          >​</span
+        >
+        <div
+          class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+        >
+          <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="text-lg leading-6 font-medium text-gray-900">
+                Keranjang Belanja
+              </h3>
+              <button id="closeCart" class="text-gray-400 hover:text-gray-500">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div
+              id="cartItems"
+              class="max-h-96 overflow-y-auto divide-y divide-gray-200"
+            >
+              <!-- Cart items will be added here dynamically -->
+              <div class="py-4 text-center text-gray-500" id="emptyCartMessage">
+                Keranjang belanja Anda masih kosong
+              </div>
+            </div>
+            <div class="mt-4 bg-gray-50 px-4 py-3 rounded-lg">
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-gray-600">Subtotal</span>
+                <span id="cartSubtotal" class="font-medium">Rp 0</span>
+              </div>
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-gray-600">Ongkos Kirim</span>
+                <span id="shippingFee" class="font-medium">Rp 0</span>
+              </div>
+              <div
+                class="flex justify-between items-center border-t border-gray-200 pt-2"
+              >
+                <span class="text-gray-900 font-semibold">Total</span>
+                <span id="cartTotal" class="text-lg font-bold text-indigo-600"
+                  >Rp 0</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+            <button
+              type="button"
+              id="checkoutBtn"
+              class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm disabled:opacity-50"
+              disabled
+            >
+              Checkout
+            </button>
+            <button
+              type="button"
+              id="continueShopping"
+              class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+            >
+              Lanjut Belanja
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+      <div
+        class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+      >
+        <div class="fixed inset-0 transition-opacity">
+          <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+        </div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
+          >​</span
+        >
+        <div
+          class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+        >
+          <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="text-lg leading-6 font-medium text-gray-900">
+                Metode Pembayaran
+              </h3>
+              <button
+                id="closePayment"
+                class="text-gray-400 hover:text-gray-500"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="space-y-4">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="font-medium">Total Pembayaran</span>
+                  <span id="paymentTotal" class="text-indigo-600 font-bold"
+                    >Rp 0</span
+                  >
+                </div>
+              </div>
+              <div>
+                <h4 class="text-md font-medium mb-2">
+                  Pilih Metode Pembayaran
+                </h4>
+                <div class="space-y-2">
+                  <div class="flex items-center space-x-3">
+                    <input
+                      type="radio"
+                      id="bankTransfer"
+                      name="paymentMethod"
+                      value="bankTransfer"
+                      class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300"
+                      checked
+                    />
+                    <label
+                      for="bankTransfer"
+                      class="block text-sm font-medium text-gray-700"
+                      >Transfer Bank</label
+                    >
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <input
+                      type="radio"
+                      id="virtualAccount"
+                      name="paymentMethod"
+                      value="virtualAccount"
+                      class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300"
+                    />
+                    <label
+                      for="virtualAccount"
+                      class="block text-sm font-medium text-gray-700"
+                      >Virtual Account</label
+                    >
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <input
+                      type="radio"
+                      id="gopay"
+                      name="paymentMethod"
+                      value="gopay"
+                      class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300"
+                    />
+                    <label
+                      for="gopay"
+                      class="block text-sm font-medium text-gray-700"
+                      >Gopay</label
+                    >
+                  </div>
+                  <div class="flex items-center space-x-3">
+                    <input
+                      type="radio"
+                      id="ovo"
+                      name="paymentMethod"
+                      value="ovo"
+                      class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300"
+                    />
+                    <label
+                      for="ovo"
+                      class="block text-sm font-medium text-gray-700"
+                      >OVO</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label
+                  for="deliveryAddress"
+                  class="block text-sm font-medium text-gray-700"
+                  >Alamat Pengiriman</label
+                >
+                <textarea
+                  id="deliveryAddress"
+                  rows="3"
+                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+            <button
+              type="button"
+              id="confirmPayment"
+              class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm"
+            >
+              Konfirmasi Pembayaran
+            </button>
+            <button
+              type="button"
+              id="backToCart"
+              class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+            >
+              Kembali ke Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+      <div
+        class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+      >
+        <div class="fixed inset-0 transition-opacity">
+          <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+        </div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
+          >​</span
+        >
+        <div
+          class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+        >
+          <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4 text-center">
+            <div
+              class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 mb-4"
+            >
+              <i class="fas fa-check text-green-600 text-xl"></i>
+            </div>
+            <h3 class="text-lg leading-6 font-medium text-gray-900 mb-2">
+              Pembayaran Berhasil!
+            </h3>
+            <div class="mt-2">
+              <p class="text-sm text-gray-500 mb-4">
+                Terima kasih telah berbelanja di Scarpastore. Pesanan Anda akan
+                segera kami proses.
+              </p>
+              <div class="bg-gray-50 p-4 rounded-lg text-left mb-4">
+                <p class="text-sm text-gray-600 mb-1">
+                  <span class="font-medium">No. Pesanan:</span> SC-<span
+                    id="orderNumber"
+                  ></span>
+                </p>
+                <p class="text-sm text-gray-600 mb-1">
+                  <span class="font-medium">Total:</span>
+                  <span id="successTotal"></span>
+                </p>
+                <p class="text-sm text-gray-600">
+                  <span class="font-medium">Metode Pembayaran:</span>
+                  <span id="paymentMethodSuccess"></span>
+                </p>
+              </div>
+              <p class="text-sm text-gray-500">
+                Kami akan mengirimkan detail pembayaran ke email Anda.
+              </p>
+            </div>
+          </div>
+          <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+            <button
+              type="button"
+              id="successBtn"
+              class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Cart functionality
+      let cart = [];
+
+      // DOM Elements
+      const cartButton = document.getElementById("cartButton");
+      const cartModal = document.getElementById("cartModal");
+      const closeCart = document.getElementById("closeCart");
+      const cartItems = document.getElementById("cartItems");
+      const cartCount = document.getElementById("cartCount");
+      const cartSubtotal = document.getElementById("cartSubtotal");
+      const shippingFee = document.getElementById("shippingFee");
+      const cartTotal = document.getElementById("cartTotal");
+      const checkoutBtn = document.getElementById("checkoutBtn");
+      const continueShopping = document.getElementById("continueShopping");
+      const paymentModal = document.getElementById("paymentModal");
+      const closePayment = document.getElementById("closePayment");
+      const paymentTotal = document.getElementById("paymentTotal");
+      const backToCart = document.getElementById("backToCart");
+      const confirmPayment = document.getElementById("confirmPayment");
+      const successModal = document.getElementById("successModal");
+      const successBtn = document.getElementById("successBtn");
+      const orderNumber = document.getElementById("orderNumber");
+      const successTotal = document.getElementById("successTotal");
+      const paymentMethodSuccess = document.getElementById(
+        "paymentMethodSuccess"
+      );
+      const mobileMenuButton = document.getElementById("mobileMenuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const addToCartButtons = document.querySelectorAll(".add-to-cart");
+      const emptyCartMessage = document.getElementById("emptyCartMessage");
+
+      // Event Listeners
+      cartButton.addEventListener("click", openCartModal);
+      closeCart.addEventListener("click", closeCartModal);
+      continueShopping.addEventListener("click", closeCartModal);
+      checkoutBtn.addEventListener("click", openPaymentModal);
+      closePayment.addEventListener("click", closePaymentModal);
+      backToCart.addEventListener("click", backToCartHandler);
+      confirmPayment.addEventListener("click", confirmPaymentHandler);
+      successBtn.addEventListener("click", closeSuccessModal);
+      mobileMenuButton.addEventListener("click", toggleMobileMenu);
+      document.addEventListener("click", (e) => {
+        if (e.target === cartModal) {
+          closeCartModal();
+        }
+        if (e.target === paymentModal) {
+          closePaymentModal();
+        }
+        if (e.target === successModal) {
+          closeSuccessModal();
+        }
+      });
+
+      // Add to cart buttons
+      addToCartButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const id = button.getAttribute("data-id");
+          const name = button.getAttribute("data-name");
+          const price = parseInt(button.getAttribute("data-price"));
+          const image = button.getAttribute("data-image");
+
+          // Check if item already in cart
+          const existingItem = cart.find((item) => item.id === id);
+
+          if (existingItem) {
+            existingItem.quantity += 1;
+          } else {
+            cart.push({
+              id,
+              name,
+              price,
+              image,
+              quantity: 1,
+            });
+          }
+
+          updateCart();
+          animateCartButton();
+        });
+      });
+
+      // Functions
+      function openCartModal() {
+        cartModal.classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeCartModal() {
+        cartModal.classList.add("hidden");
+        document.body.style.overflow = "auto";
+      }
+
+      function openPaymentModal() {
+        paymentTotal.textContent = cartTotal.textContent;
+        cartModal.classList.add("hidden");
+        paymentModal.classList.remove("hidden");
+      }
+
+      function closePaymentModal() {
+        paymentModal.classList.add("hidden");
+        document.body.style.overflow = "auto";
+      }
+
+      function backToCartHandler() {
+        paymentModal.classList.add("hidden");
+        cartModal.classList.remove("hidden");
+      }
+
+      function confirmPaymentHandler() {
+        const paymentMethod = document.querySelector(
+          'input[name="paymentMethod"]:checked'
+        ).value;
+        const deliveryAddress =
+          document.getElementById("deliveryAddress").value;
+
+        if (!deliveryAddress) {
+          alert("Silahkan masukkan alamat pengiriman");
+          return;
+        }
+
+        // Generate random order number
+        const randomOrderNum = Math.floor(100000 + Math.random() * 900000);
+        orderNumber.textContent = randomOrderNum;
+        successTotal.textContent = cartTotal.textContent;
+
+        // Set payment method text
+        let methodText = "";
+        switch (paymentMethod) {
+          case "bankTransfer":
+            methodText = "Transfer Bank";
+            break;
+          case "virtualAccount":
+            methodText = "Virtual Account";
+            break;
+          case "gopay":
+            methodText = "Gopay";
+            break;
+          case "ovo":
+            methodText = "OVO";
+            break;
+        }
+        paymentMethodSuccess.textContent = methodText;
+
+        paymentModal.classList.add("hidden");
+        successModal.classList.remove("hidden");
+
+        // Clear cart after successful payment
+        cart = [];
+        updateCart();
+      }
+
+      function closeSuccessModal() {
+        successModal.classList.add("hidden");
+        document.body.style.overflow = "auto";
+      }
+
+      function toggleMobileMenu() {
+        mobileMenu.classList.toggle("hidden");
+      }
+
+      function updateCart() {
+        // Update cart count
+        const itemCount = cart.reduce(
+          (total, item) => total + item.quantity,
+          0
+        );
+        cartCount.textContent = itemCount;
+
+        // Update cart items
+        cartItems.innerHTML = "";
+
+        if (cart.length === 0) {
+          emptyCartMessage.classList.remove("hidden");
+          checkoutBtn.disabled = true;
+        } else {
+          emptyCartMessage.classList.add("hidden");
+          checkoutBtn.disabled = false;
+
+          cart.forEach((item) => {
+            const cartItem = document.createElement("div");
+            cartItem.className =
+              "cart-item fade-in py-4 flex justify-between items-center";
+
+            // Left side (image, name, price)
+            const itemLeft = document.createElement("div");
+            itemLeft.className = "flex items-center";
+
+            const itemImage = document.createElement("img");
+            itemImage.src = item.image;
+            itemImage.alt = item.name;
+            itemImage.className = "w-16 h-16 object-cover rounded";
+
+            const itemDetails = document.createElement("div");
+            itemDetails.className = "ml-4";
+
+            const itemName = document.createElement("p");
+            itemName.className = "text-sm font-medium text-gray-900";
+            itemName.textContent = item.name;
+
+            const itemPrice = document.createElement("p");
+            itemPrice.className = "text-sm text-gray-500";
+            itemPrice.textContent = formatRupiah(item.price);
+
+            itemDetails.appendChild(itemName);
+            itemDetails.appendChild(itemPrice);
+            itemLeft.appendChild(itemImage);
+            itemLeft.appendChild(itemDetails);
+
+            // Right side (quantity controls, subtotal)
+            const itemRight = document.createElement("div");
+            itemRight.className = "flex flex-col items-end";
+
+            const quantityControls = document.createElement("div");
+            quantityControls.className = "flex items-center space-x-2 mb-2";
+
+            const decreaseBtn = document.createElement("button");
+            decreaseBtn.className =
+              "w-6 h-6 flex items-center justify-center border border-gray-300 rounded-full text-gray-500 hover:bg-gray-100";
+            decreaseBtn.innerHTML = '<i class="fas fa-minus text-xs"></i>';
+            decreaseBtn.addEventListener("click", () => {
+              item.quantity -= 1;
+              if (item.quantity <= 0) {
+                cart = cart.filter((cartItem) => cartItem.id !== item.id);
+              }
+              updateCart();
+            });
+
+            const quantitySpan = document.createElement("span");
+            quantitySpan.className = "text-sm font-medium";
+            quantitySpan.textContent = item.quantity;
+
+            const increaseBtn = document.createElement("button");
+            increaseBtn.className =
+              "w-6 h-6 flex items-center justify-center border border-gray-300 rounded-full text-gray-500 hover:bg-gray-100";
+            increaseBtn.innerHTML = '<i class="fas fa-plus text-xs"></i>';
+            increaseBtn.addEventListener("click", () => {
+              item.quantity += 1;
+              updateCart();
+            });
+
+            quantityControls.appendChild(decreaseBtn);
+            quantityControls.appendChild(quantitySpan);
+            quantityControls.appendChild(increaseBtn);
+
+            const itemSubtotal = document.createElement("p");
+            itemSubtotal.className = "text-sm font-medium";
+            itemSubtotal.textContent = formatRupiah(item.price * item.quantity);
+
+            itemRight.appendChild(quantityControls);
+            itemRight.appendChild(itemSubtotal);
+
+            cartItem.appendChild(itemLeft);
+            cartItem.appendChild(itemRight);
+
+            cartItems.appendChild(cartItem);
+          });
+        }
+
+        // Update totals
+        const subtotal = cart.reduce(
+          (total, item) => total + item.price * item.quantity,
+          0
+        );
+        const shipping = subtotal > 0 ? (subtotal > 1000000 ? 0 : 25000) : 0;
+        const total = subtotal + shipping;
+
+        cartSubtotal.textContent = formatRupiah(subtotal);
+        shippingFee.textContent =
+          subtotal > 0
+            ? shipping === 0
+              ? "GRATIS"
+              : formatRupiah(shipping)
+            : "Rp 0";
+        cartTotal.textContent = formatRupiah(total);
+      }
+
+      function animateCartButton() {
+        cartButton.classList.add("animate-pulse");
+        setTimeout(() => {
+          cartButton.classList.remove("animate-pulse");
+        }, 500);
+      }
+
+      function formatRupiah(amount) {
+        return "Rp " + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+      }
+    </script>
+  </body>
+</html>
